@@ -1,0 +1,13 @@
+name: 'Stryker Report Action'
+description: 'Show Stryker report annotations in GitHub'
+inputs:
+  repo-token:
+    description: 'GitHub Token'
+    required: true
+  report-json:
+    description: 'Stryker JSON Report Path'
+    required: false
+    default: './reports/mutation/mutation.json'
+runs:
+  using: 'node12'
+  main: './src/index.js'

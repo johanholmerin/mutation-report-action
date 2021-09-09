@@ -1,0 +1,20 @@
+{
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "packageManager": "yarn",
+  "reporters": [
+    "html",
+    "clear-text",
+    "json",
+    "progress"
+  ],
+  "mutate": [
+    "src/parse.js"
+  ],
+  "testRunner": "jest",
+  "coverageAnalysis": "perTest",
+  "thresholds": { "high": 100, "low": 100, "break": 100 },
+  "jest": {
+    "projectType": "custom",
+    "configFile": "./jest.config.json"
+  }
+}
