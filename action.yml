@@ -1,11 +1,11 @@
-name: 'Stryker Report Action'
-description: 'Show Stryker report annotations in GitHub'
+name: 'Mutation Report Action'
+description: 'Show mutation report annotations in GitHub'
 inputs:
   repo-token:
     description: 'GitHub Token'
     required: true
   report-json:
-    description: 'Stryker JSON Report Path'
+    description: 'Mutation JSON Report Path'
     required: false
     default: './reports/mutation/mutation.json'
 runs:

@@ -6,7 +6,7 @@ function getHeaders(token) {
   return {
     'Content-Type': 'application/json',
     Authorization: `Bearer ${token}`,
-    'User-Agent': 'stryker-report-action',
+    'User-Agent': 'mutation-report-action',
   };
 }
 
