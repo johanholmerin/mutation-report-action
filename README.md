@@ -9,7 +9,7 @@ Show mutation report annotations in GitHub. Supports any framework using the
 
 ```yaml
 - name: Mutation Annotation Report
-  uses: johanholmerin/mutation-report-action@0.1.0
+  uses: johanholmerin/mutation-report-action@0.2.0
   if: ${{ always() }} # Upload even if tests don't pass testing threshold
   with:
     repo-token: '${{ secrets.GITHUB_TOKEN }}'
